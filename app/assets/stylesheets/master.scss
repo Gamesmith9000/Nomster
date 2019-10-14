@@ -8,9 +8,8 @@ h1, h2, h3, h4, h5, h6
 
 body
 {
-  background: image_url('beanstalk-dark');
-font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-
+  background: image_url('beanstalk-dark');  /* The bg. image choice might need to be adjusted */
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 /*Alt choice: Font stack starting with "Segoe UI",*/
 }
 
@@ -28,6 +27,13 @@ font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, 
 
 .navbar
 {
-  background: image_url('hotel-wallpaper-black');
+  background: image_url('hotel-wallpaper-black'); /* The bg. image choice might need to be adjusted */
   box-shadow: 3px 4px 10px #666666;
+}
+
+.navbar-inverse .navbar-brand
+{
+  color: #b3daff; /* color might need adjusting */
+  font-family: 'fira_sansbook';
+  font-size: : 26px;
 }
