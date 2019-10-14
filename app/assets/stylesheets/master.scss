@@ -1,20 +1,17 @@
 @import "bootstrap";
 
-h1, h2, h3, h4, h5, h6
-{
+h1, h2, h3, h4, h5, h6{
   margin: 0;
   padding: 0;
 }
 
-body
-{
+body{
   background: image_url('beanstalk-dark');  /* The bg. image choice might need to be adjusted */
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 /*Alt choice: Font stack starting with "Segoe UI",*/
 }
 
-.booyah-box
-{
+.booyah-box{
   -moz-box-shadow: 1px 1x 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -25,15 +22,18 @@ body
   padding: 20px;
 }
 
-.navbar
-{
+.navbar{
   background: image_url('hotel-wallpaper-black'); /* The bg. image choice might need to be adjusted */
   box-shadow: 3px 4px 10px #666666;
 }
 
-.navbar-inverse .navbar-brand
-{
+.navbar-inverse .navbar-brand{
   color: #b3daff; /* color might need adjusting */
   font-family: 'fira_sansbook';
   font-size: 26px;
+}
+
+/* The class for the page links for will_paginate */
+.pagination{
+
 }

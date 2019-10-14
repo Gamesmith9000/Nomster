@@ -1,5 +1,7 @@
-<% @places.each do |place| %>
+<% @places = Place.paginate(page: params[:page], per_page: 1) %>
+<%= will_paginate @places %>
 
+<% @places.each do |place| %>
   <div class = "booyah-box col-10 offset-1">
     <h1><%= place.name %></h1>
     <i> <%= place.address %></i><br /><br />
@@ -7,3 +9,8 @@
   </div>
 
 <% end %>
+
+
+
+
+
