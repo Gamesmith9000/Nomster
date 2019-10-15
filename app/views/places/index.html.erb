@@ -1,4 +1,4 @@
-<% @places = Place.paginate(page: params[:page], per_page: 2) %>
+<% @places = Place.paginate(page: params[:page], per_page: 4) %>
 <%= will_paginate @places %>
 
 <% @places.each do |place| %>
@@ -6,8 +6,11 @@
     <h1><%= place.name %></h1>
     <i> <%= place.address %></i><br /><br />
     <p> <%= place.description %></p><br />
+    
+    <% if place.user.present? %>
+      <small><%= place.user.email %></small>
+    <% end %>
   </div>
-
 <% end %>
 
 
