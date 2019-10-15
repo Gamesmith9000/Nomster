@@ -35,6 +35,8 @@ end
 
 gem 'will_paginate', '~> 3.1.1'
 gem 'simple_form'
+gem "font-awesome-rails"
+gem 'devise'
 
 #--------------------------------------
 
@@ -76,7 +78,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-#--------------------------------------
-
-gem "font-awesome-rails"
