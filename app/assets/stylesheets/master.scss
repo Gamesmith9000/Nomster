@@ -35,6 +35,13 @@ body{
   padding: 20px;
 }
 
+.invalid-feedback{
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding: 2px 8 px 2px 8px;
+}
+
 .navbar{
   background: image_url('hotel-wallpaper-black'); /* The bg. image choice might need to be adjusted */
   box-shadow: 3px 4px 10px #666666;
