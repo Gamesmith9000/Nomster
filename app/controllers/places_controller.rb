@@ -20,6 +20,7 @@ class PlacesController < ApplicationController
 
   def show
     @place = Place.find(params[:id])
+    @comment = Comment.new # 'example row' ?
   end
 
   def edit
