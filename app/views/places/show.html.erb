@@ -1,3 +1,5 @@
+<% require 'yaml'%>
+
 <div class="booyah-box col-10 offset-1">
 	<h1><%= @place.name %></h1>
 	<i><%= @place.address %></i>
@@ -24,8 +26,11 @@
 	      }
 	    </script>
 
+<% # Modified the URL below to hide key from version control %>
+
 		 <script async defer
-		  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzcTrXVTDma5-lsZsIuYMgDMxpcOgbnR8&callback=initMap">
+		  src= <%= "https://maps.googleapis.com/maps/api/js?key=" + 
+		  ENV['GEOCODER_API_KEY'] + "&callback=initMap" %>>
 		  </script>
 
 
