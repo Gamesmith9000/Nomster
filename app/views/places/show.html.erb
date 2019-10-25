@@ -45,7 +45,7 @@
 
 	<%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
 		<%= f.input :message %>
-		<%= f.input :rating %>
+		<%= f.input :rating, as: :select, collection: Comment::RATINGS %>
 		<%= f.submit "Add a Comment", class: 'btn btn-primary' %>
 	<% end %>
 
@@ -54,8 +54,10 @@
 	<% @place.comments.each do |comment| %>
 		<div>
 			<blockquote>
-				<b><%= comment.rating %></b> -
+				<% if comment.humanized_rating.present? %>
+				<b><%= comment.humanized_rating %></b> -
 					<%= comment.message %>
+				<% end %>
 				<small><%= comment.user.email %></small>
 			</blockquote>
 		</div>
@@ -63,4 +65,3 @@
 
 	<br/><!--Added this break, because the border was overlapping the button-->
 </div>
-
