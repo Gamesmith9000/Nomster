@@ -90,14 +90,13 @@
 			<div class="col-12 col-sm-6">
 				<blockquote>
 					<% if comment.humanized_rating.present? %>
-					<b><%= comment.humanized_rating %></b> -
-						<%= comment.message %>
+						<b><%= comment.humanized_rating %></b> -
 					<% end %>
+					<%= comment.message %>					
 					<small><%= comment.user.email %></small>
 				</blockquote>
 			</div>
 		<% end %>
 	</div>
 
-	<br/><!--Added this break, because the border was overlapping the button-->
 </div>
