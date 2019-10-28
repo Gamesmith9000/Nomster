@@ -39,7 +39,8 @@ gem "font-awesome-rails"
 gem 'devise'
 gem "geocoder"
 gem "figaro"
-
+gem 'carrierwave', '~> 2.0'
+gem 'fog-aws'
 #--------------------------------------
 
 # Use Redis adapter to run Action Cable in production
