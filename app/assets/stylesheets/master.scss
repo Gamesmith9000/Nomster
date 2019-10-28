@@ -23,6 +23,29 @@ body{
   color: grey 
 }
 
+/* Adjust the background color for blockquotes */
+
+blockquote {
+  background: /*#f9f9f9*/ #0d0d0d;
+  border-left: 10px solid /*#ccc*/ #080808;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
 .booyah-box{
   -moz-box-shadow: 1px 1x 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
