@@ -36,7 +36,6 @@
         <h3>[Placeholder] Slider4 caption</h3>
       </div>
     </div>
-
   </div>
 
 
@@ -50,9 +49,12 @@
   </a>
 </div>
 
-
-<% @places = Place.paginate(page: params[:page], per_page: 4) %>
-<%= will_paginate @places %>
+<div class="row">
+<div class="col-12 offset-1">
+  <% @places = Place.paginate(page: params[:page], per_page: 4) %>
+  <%= will_paginate @places %>
+</div>
+</div>
 
 <% @places.each do |place| %>
   <div class = "booyah-box col-10 offset-1">
@@ -74,11 +76,8 @@
   			<small><%= place.comments.last.user.email %></small>
   		</blockquote>
   	</div>
-<% end%>
-
+  <% end%>
   </div>
-
-
 <% end %>
 
 

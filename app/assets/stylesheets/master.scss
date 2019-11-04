@@ -1,41 +1,25 @@
 @import "bootstrap";
 @import "font-awesome";
 
-
-p{
-    /* Temp code:*/
-  color: grey
-}
-
-h1, h2, h3, h4, h5, h6{
-  margin: 0;
-  padding: 0;
-  /* Temp code:*/
-  color: grey 
-}
+/* HTML elements ================================================================== */
 
 body{
-  background: image_url('beanstalk-dark');  /* The bg. image choice might need to be adjusted */
+  background: image_url('beanstalk-dark');
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-/*Alt choice: Font stack starting with "Segoe UI",*/
-
-  /* Temp code:*/
-  color: grey 
+  color: rgb(150,150,150);
 }
 
-/* Adjust the background color for blockquotes */
-
-blockquote {
-  background: /*#f9f9f9*/ #0d0d0d;
-  border-left: 10px solid /*#ccc*/ #080808;
+blockquote{
+  background: #0d0d0d;
+  border-left: 10px solid #080808;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
   overflow-wrap: break-word;
 }
 
-blockquote:before {
-  color: #ccc;
+blockquote:before{
+  color: #cccccc;
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
@@ -43,25 +27,66 @@ blockquote:before {
   vertical-align: -0.4em;
 }
 
-blockquote p {
+blockquote p{
   display: inline;
 }
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+  color: rgb(170,170,170);
+}
+
+p{
+  color: rgb(170,170,170);
+}
+
+/* Custom/Misc ==================================================================== */
 
 .booyah-box{
   -moz-box-shadow: 1px 1x 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
-  /*background: #fff; This line is the proper color. Next line is temp to help w/ eyes */
-  background: #ggg;
+
+  background: rgba(0, 0, 0, .85);
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   margin-bottom: 15px;
   padding: 20px;
 }
 
+.clear{
+  clear: both;
+}
+
+.inverted-image{  
+  filter: invert(.7);
+}
+
+.pagination{          /* This class is for the page links for will_paginate */
+  font-size: 20px;
+  margin-bottom: 0;
+  display: initial;
+}
+        
+#map {
+  height: 300px;
+}
+
+/* Bootstrap ====================================================================== */
+
+.btn-secondary{
+  background-color: rgb(100,100,100);
+  color: rgb(255,255,255);
+}
+
+.btn-secondary:hover{
+  background-color: rgb(75,75,75);
+  color: rgb(255,255,255);
+}
+
 .carousel{
-  /*box-shadow: 0px 3px 8px #2a2a2a;*//*This line is the lesson's shadow color*/
-  box-shadow: 0px 3px 8px #d0d0d0; /*Custom shadow color to match booyah box's*/
+  box-shadow: 0px 3px 8px #d0d0d0; /*Custom shadow color to match booyah-box's*/
 }
 
 .carousel-caption{
@@ -75,21 +100,30 @@ blockquote p {
   left: 0;
 }
 
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  max-height: 550px; 
+  width: 100%;
+}
+
 .carousel-item.active, 
 .carousel-item-next, 
 .carousel-item-prev {
   display: block;
 }
 
-
-.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
-  max-height: 550px; 
-  width: 100%;
+.close{
+  color: rgb(255,255,255);
+  opacity: 1;
 }
 
+.close:hover{
+  color: #d9534f;
+}
 
-.clear{
-  clear: both;
+.form-control{
+  background-color: rgb(0,0,0) !important;
+  color: rgb(255,255,255) !important;
+  border-color: rgb(255,255,255);
 }
 
 .invalid-feedback{
@@ -99,23 +133,24 @@ blockquote p {
   padding: 2px 8 px 2px 8px;
 }
 
-.navbar{
-  background: image_url('hotel-wallpaper-black'); /* The bg. image choice might need to be adjusted */
-  box-shadow: 3px 4px 10px #666666;
+.modal-content {
+  background-color: rgb(0,0,0);  
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
 }
 
+.modal-title{
+  color: rgb(255,255,255);
+  margin: auto;
+}
+
+.navbar{
+  background: image_url('hotel-wallpaper-black'); /* The bg. image choice might need to be adjusted */
+  box-shadow: 3px 4px 8px #666666;
+}
 .navbar-inverse .navbar-brand{
   color: #b3daff; /* color might need adjusting */
   font-family: 'fira_sansbook';
   font-size: 26px;
   margin-bottom: 0;
-}
-
-/* The class for the page links for will_paginate */
-.pagination{
-
-}
-        
-#map {
-  height: 300px;
 }
