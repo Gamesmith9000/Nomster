@@ -7,6 +7,7 @@ body{
   background: image_url('beanstalk-dark');
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   color: rgb(150,150,150);
+  margin-top: 4.25rem;
 }
 
 blockquote{
@@ -142,7 +143,7 @@ p{
   color: #ff3333;
   background-color: #FFEEEE;
   border-radius: 3px;
-  padding: 2px 8 px 2px 8px;
+  padding: 2px 8px 2px 8px;
 }
 
 .modal-content {
@@ -159,13 +160,10 @@ p{
 .navbar {
   background: image_url('hotel-wallpaper-black');
   box-shadow: 3px 4px 8px #666666;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
 }
 .navbar-inverse .navbar-brand{
   color: #b3daff;
   font-family: 'fira_sansbook';
-  font-size: 26px;
+  font-size: 1.625rem;
   margin-bottom: 0;
 }
