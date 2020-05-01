@@ -156,9 +156,12 @@ p{
   margin: auto;
 }
 
-.navbar{
+.navbar {
   background: image_url('hotel-wallpaper-black');
   box-shadow: 3px 4px 8px #666666;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 .navbar-inverse .navbar-brand{
   color: #b3daff;
