@@ -20,7 +20,7 @@ class PlacesController < ApplicationController
 
   def show
     @place = Place.find(params[:id])
-    @comment = Comment.new # 'example row' ?
+    @comment = Comment.new
     @photo = Photo.new
   end
 
@@ -38,8 +38,6 @@ class PlacesController < ApplicationController
     if @place.user != current_user
       return render plain: 'Not Allowed', status: :forbidden
     end
-
-    # Reminder: without the return above, the code would keep running
 
     @place.update_attributes(place_params)
     if @place.valid?
@@ -65,5 +63,4 @@ class PlacesController < ApplicationController
   def place_params
     params.require(:place).permit(:name, :description, :address)
   end
-
 end

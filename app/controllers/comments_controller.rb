@@ -1,5 +1,4 @@
 class CommentsController < ApplicationController
-
 	before_action :authenticate_user!
 
 	def create
@@ -13,5 +12,4 @@ class CommentsController < ApplicationController
 	def comment_params
 		params.require(:comment).permit(:message, :rating)
 	end
-
 end
