@@ -1,16 +1,14 @@
 @import "bootstrap";
 @import "font-awesome";
 
-/* HTML elements ================================================================== */
-
-body{
+body {
   background: image_url('beanstalk-dark');
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   color: rgb(150,150,150);
   margin-top: 4.25rem;
 }
 
-blockquote{
+blockquote {
   background: #0d0d0d;
   border-left: 10px solid #080808;
   margin: 1.5em 10px;
@@ -19,7 +17,7 @@ blockquote{
   overflow-wrap: break-word;
 }
 
-blockquote:before{
+blockquote:before {
   color: #cccccc;
   content: open-quote;
   font-size: 4em;
@@ -28,23 +26,21 @@ blockquote:before{
   vertical-align: -0.4em;
 }
 
-blockquote p{
+blockquote p {
   display: inline;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   color: rgb(170,170,170);
 }
 
-p{
+p {
   color: rgb(170,170,170);
 }
 
-/* Custom/Misc ==================================================================== */
-
-.booyah-box{
+.booyah-box {
   -moz-box-shadow: 1px 1x 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -56,42 +52,42 @@ p{
   padding: 20px;
 }
 
-.clear{
-  clear: both;
-}
-
-.inverted-image{  
-  filter: invert(.7);
-}
-
-.pagination{          /* This class is for the page links for will_paginate */
-  font-size: 20px;
-  margin-bottom: 0;
-  display: initial;
-}
-        
 #map {
   height: 300px;
 }
 
+.clear {
+  clear: both;
+}
+
+.inverted-image {  
+  filter: invert(.7);
+}
+
+.pagination {          /* This class is for the page links for will_paginate */
+  font-size: 20px;
+  margin-bottom: 0;
+  display: initial;
+}
+
 /* Bootstrap ====================================================================== */
 
-.alert-info{
+.alert-info {
   background-color: #0275d8;
   color: #ffffff;
 }
 
-.btn-secondary{
+.btn-secondary {
   background-color: rgb(100,100,100);
   color: rgb(255,255,255);
 }
 
-.btn-secondary:hover{
+.btn-secondary:hover {
   background-color: rgb(75,75,75);
   color: rgb(255,255,255);
 }
 
-.carousel{
+.carousel {
   background: image_url('hotel-wallpaper-black');
   background-position: 0px 13px;
   border-style: ridge;
@@ -102,7 +98,7 @@ p{
   border-right-width: 0px;
 }
 
-.carousel-caption{
+.carousel-caption {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 60px;
   font-weight: 100;
@@ -115,7 +111,7 @@ p{
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
   margin: 0 auto;
-  box-shadow: 0px 3px 8px #d0d0d0; /* Custom shadow color to match booyah-box's */
+  box-shadow: 0px 3px 8px #d0d0d0;
  }
 
 .carousel-item.active, 
@@ -124,22 +120,22 @@ p{
   display: block;
 }
 
-.close{
+.close {
   color: rgb(255,255,255);
   opacity: 1;
 }
 
-.close:hover{
+.close:hover {
   color: #d9534f;
 }
 
-.form-control{
+.form-control {
   background-color: rgb(0,0,0) !important;
   color: rgb(255,255,255) !important;
   border-color: rgb(255,255,255);
 }
 
-.invalid-feedback{
+.invalid-feedback {
   color: #ff3333;
   background-color: #FFEEEE;
   border-radius: 3px;
@@ -152,7 +148,7 @@ p{
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
 }
 
-.modal-title{
+.modal-title {
   color: rgb(255,255,255);
   margin: auto;
 }
@@ -161,7 +157,8 @@ p{
   background: image_url('hotel-wallpaper-black');
   box-shadow: 3px 4px 8px #666666;
 }
-.navbar-inverse .navbar-brand{
+
+.navbar-inverse .navbar-brand {
   color: #b3daff;
   font-family: 'fira_sansbook';
   font-size: 1.625rem;
