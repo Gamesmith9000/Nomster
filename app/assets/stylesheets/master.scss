@@ -48,8 +48,12 @@ p {
   background: rgba(0, 0, 0, .85);
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-  margin-bottom: 15px;
   padding: 20px;
+
+  &.col-10.offset-1 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
 }
 
 #map {
@@ -66,8 +70,20 @@ p {
 
 .pagination {          /* This class is for the page links for will_paginate */
   font-size: 20px;
-  margin-bottom: 0;
-  display: initial;
+  margin-top: 1rem;
+
+  .current {
+    text-decoration: underline;
+  }
+  .current, :not(.disabled):not(.next_page):not(.previous_page) {
+    margin: 0 0.5rem;
+  }
+  .next_page {
+    margin-left: .5rem;
+  }
+  .previous_page {
+    margin-right: .5rem;
+  }
 }
 
 /* Bootstrap ====================================================================== */
@@ -91,11 +107,8 @@ p {
   background: image_url('hotel-wallpaper-black');
   background-position: 0px 13px;
   border-style: ridge;
-  border-width: 3px;
-  border-bottom-color: rgb(40,40,40);
-  border-top-color: rgb(55,55,55);
-  border-left-width: 0px;
-  border-right-width: 0px;
+  border-width: 0 0 3px;
+  border-color: rgb(55,55,55);
 }
 
 .carousel-caption {
