@@ -52,7 +52,7 @@ p {
 
   &.col-10.offset-1 {
     margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 }
 
@@ -70,6 +70,7 @@ p {
 
 .pagination {          /* This class is for the page links for will_paginate */
   font-size: 20px;
+  margin-bottom: -1rem;
   margin-top: 1rem;
 
   .current {
