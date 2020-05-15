@@ -5,7 +5,6 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
 
-
   <div class="carousel-inner" role="listbox">
 
     <div class="carousel-item active">
@@ -28,7 +27,6 @@
         <h3>Cozy spaces</h3>
       </div>
     </div>
-
   </div>
 
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -42,18 +40,20 @@
 </div>
 
 <div class="row">
-<div class="col-12 offset-1">
-  <% @places = Place.paginate(page: params[:page], per_page: 4) %>
-  <%= will_paginate @places %>
-</div>
+  <div class="col-12 offset-1">
+    <% @places = Place.paginate(page: params[:page], per_page: 4) %>
+    <%= will_paginate @places %>
+  </div>
 </div>
 
 <% @places.each do |place| %>
-  <div class = "booyah-box col-10 offset-1">
-	<h1><%= link_to place.name, place_path(place) %></h1>
-    <i> <%= place.address %></i><br /><br />
-    <p> <%= place.description %></p><br />
-    
+  <div class="booyah-box col-10 offset-1">
+	  <h1><%= link_to place.name, place_path(place)%></h1>
+    <i><%= place.address %></i>
+    <br /><br />
+    <p><%= place.description %></p>
+    <br />
+
     <% if place.user.present? %>
       <small><%= place.user.email %></small>
     <% end %>

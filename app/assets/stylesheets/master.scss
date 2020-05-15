@@ -15,19 +15,19 @@ blockquote {
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
   overflow-wrap: break-word;
-}
 
-blockquote:before {
-  color: #cccccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
+  &:before {
+    color: #cccccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
 
-blockquote p {
-  display: inline;
+  p {
+    display: inline;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -68,7 +68,7 @@ p {
   filter: invert(.7);
 }
 
-.pagination {          /* This class is for the page links for will_paginate */
+.pagination {
   font-size: 20px;
   margin-bottom: -1rem;
   margin-top: 1rem;
@@ -97,11 +97,11 @@ p {
 .btn-secondary {
   background-color: rgb(100,100,100);
   color: rgb(255,255,255);
-}
 
-.btn-secondary:hover {
-  background-color: rgb(75,75,75);
-  color: rgb(255,255,255);
+  &:hover {
+    background-color: rgb(75,75,75);
+    color: rgb(255,255,255);
+  }
 }
 
 .carousel {
@@ -137,10 +137,10 @@ p {
 .close {
   color: rgb(255,255,255);
   opacity: 1;
-}
 
-.close:hover {
-  color: #d9534f;
+  &:hover {
+    color: #d9534f;
+  }
 }
 
 .form-control {

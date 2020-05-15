@@ -13,12 +13,8 @@ Rails.application.configure do
   #   password: ENV['GMAIL_PASSWORD']
   # }
 
-
-
-
-
-  # [JFS] Configure the mailer - note the 3030 to match the dev environment
-  config.action_mailer.default_url_options = { host: 'localhost:3030'}
+  # [JFS] Configure the mailer - note the 3030 to match the dev environment. New environment - now 3000
+  config.action_mailer.default_url_options = { host: 'localhost:3000'}
 
 
   # Settings specified here will take precedence over those in config/application.rb.
