@@ -1,5 +1,7 @@
 # Nomster
 
+Live site: https://nomster-julian-smith.herokuapp.com/
+
 ## About
 
 Nomster is similar to sites such as Yelp and TripAdvisor. It is devoted to unique venues and spaces. Users can create, comment on, and rate places they have visited.
@@ -25,3 +27,10 @@ There is also a sample user account that can be signed into. The username is `no
 ![nomster2](https://user-images.githubusercontent.com/55506831/87607194-634a7300-c6c2-11ea-8f9e-d771abf10e42.PNG)
 
 * To view information about your account, click on the `My Profile` navigation link. This page will also list the places you have created and the comments you have posted.
+
+## Built With
+* [Amazon S3](https://aws.amazon.com/s3/) - Media storage
+* [Bootstrap](https://getbootstrap.com/) - Front-End library
+* [Heroku](https://www.heroku.com/) - Deployment
+* [Ruby on Rails](https://rubyonrails.org/) - Web application framework
+* [PostgreSQL](https://www.postgresql.org/) - Database
